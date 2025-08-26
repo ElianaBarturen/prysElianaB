@@ -4,7 +4,6 @@ const app = express();
 
 app.use(express.json());
 
-//rutas
 app.use("/api/migracion", migracionRoutes);
 const PORT = process.env.PORT || 3000;
 
