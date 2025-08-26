@@ -5,7 +5,7 @@ import { MongoClient } from "mongodb";
 const mongoUrl = "mongodb://localhost:27017";
 const mongoClient = new MongoClient(mongoUrl);
 
-const insertToNoSql1 = async (data) => {
+const insertToNoSql = async (data) => {
   try {
     console.log(`Insertando ${data.length} registros en NoSQL...`);
 
