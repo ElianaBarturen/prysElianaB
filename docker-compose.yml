@@ -10,7 +10,7 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - MONGO_URI=mongodb://mongo:27017/dashboard_asistencia
+      - process.env.MONGO_URI,
     env_file:
       - .env
     depends_on:
